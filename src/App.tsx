@@ -18,6 +18,7 @@ import { DateNavigator } from './components/DateNavigator'
 import { MedicationSchedule } from './components/MedicationSchedule'
 import { StageManager } from './components/StageManager'
 import { Button } from './components/ui/button'
+import logo from './assets/logo.jpg'
 
 function App() {
   const [data, setData] = useState<AppData>(loadData())
@@ -92,9 +93,12 @@ function App() {
 
       <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-8 max-w-6xl">
         <div className="mb-4 sm:mb-6 flex items-center justify-between gap-2">
-          <h1 className="text-xl sm:text-3xl font-bold text-gray-900">
-            Графік прийому
-          </h1>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <img src={logo} alt="Logo" className="h-8 w-8 sm:h-10 sm:w-10 rounded-lg object-cover" />
+            <h1 className="text-xl sm:text-3xl font-bold text-gray-900">
+              Графік прийому
+            </h1>
+          </div>
           <Button
             variant="outline"
             size="sm"
