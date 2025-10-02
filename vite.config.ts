@@ -8,7 +8,7 @@ export default defineConfig({
   // GitHub Pages deploys to https://<username>.github.io/<repo>/
   // Set base to '/<repo>/' for GitHub Pages deployment
   // For custom domain or root deployment, use '/'
-  base: process.env.GITHUB_PAGES === 'true' ? '/tilewind/' : '/',
+  base: process.env.GITHUB_PAGES === 'true' ? '/pills/' : '/',
   plugins: [
     tailwindcss(),
     react({
@@ -20,9 +20,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'TileWind',
-        short_name: 'TileWind',
-        description: 'TileWind Progressive Web Application',
+        name: 'Pills',
+        short_name: 'Pills',
+        description: 'Pills Progressive Web Application',
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',
